@@ -9,7 +9,7 @@
 
 # Lebenslauf – Haris Naeem  
 
-Ein sauber gestalteter, responsiver One‑Page‑Lebenslauf, der über **GitHub Pages** veröffentlicht wird und zusätzlich als editierbare Office‑Vorlage bereitsteht. Das Repository enthält alles, was Sie benötigen, um den Lebenslauf online anzusehen, die Quelldatei zu bearbeiten oder das Layout für Ihren eigenen CV wiederzuverwenden.
+Ein sauber gestalteter, responsiver Lebenslauf, der über **GitHub Pages** veröffentlicht wird und zusätzlich als editierbare Office‑Vorlage bereitsteht. Das Repository enthält alles, was Sie benötigen, um den Lebenslauf online anzusehen, die Quelldatei zu bearbeiten oder das Layout für Ihren eigenen CV wiederzuverwenden.
 
 ---   
 
