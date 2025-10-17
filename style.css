@@ -1,0 +1,153 @@
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body {
+            font-family:'Open Sans',Arial,sans-serif;
+            line-height:1.6;
+            color:#333;
+            background:#f8f9fa;
+            padding:20px;
+        }
+        .resume-container {
+            max-width:1000px;
+            margin:0 auto;
+            background:#fff;
+            padding:30px;
+            border-radius:8px;
+            box-shadow:0 0 20px rgba(0,0,0,.1);
+        }
+
+        /* ---------- Header ---------- */
+        header.header {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            align-items:flex-start;
+            gap:1rem;
+            margin-bottom:30px;
+        }
+        header .info { flex:1 1 60%; }
+        header .title,
+        header .name {
+            margin:0;
+            font-size:2.5rem;    /* default – overridden below */
+            font-weight:bold;
+            text-transform:uppercase;
+            color:#2c3e50;
+        }
+        header .title { font-size:1.5rem; }
+        header .name  { font-size:3rem; }
+
+        header .info dl {
+            display:grid;
+            grid-template-columns:max-content 1fr;
+            gap:0.3rem 0.8rem;
+            margin-bottom:0.4rem;
+        }
+        header .info dl { column-gap:3.5rem; }
+
+        header .info dt {
+            font-weight:bold;
+            color:#2c3e50;
+        }
+        header .photo { flex:0 0 200px; text-align:center; }
+        header .photo img { max-width:100%; height:auto; border-radius:8px; }
+
+        /* ---------- Section titles ---------- */
+        .section-title {
+            background:#dddddd;
+            padding:10px 15px;
+            margin:20px 0 15px;
+            font-size:1.4rem;
+            font-weight:bold;
+            text-transform:uppercase;
+            letter-spacing:1px;
+            border-left:4px solid #3498db;
+        }
+
+        /* ---------- Tables ---------- */
+        .experience-table,
+        .education-table,
+        .skills-table,
+        .projects-table {
+            width:100%;
+            margin-bottom:20px;
+            border-collapse:collapse;
+        }
+        .experience-table td,
+        .education-table td,
+        .skills-table td,
+        .projects-table td {
+            padding:8px 10px;
+            vertical-align:top;
+            border-bottom:1px solid #eee;
+        }
+        .experience-date,
+        .education-date {
+            font-weight:bold;
+            color:#3498db;
+        }
+        .company,
+        .institution,
+        .project-title,
+        .degree-title {
+            font-weight:bold;
+            color:#2c3e50;
+        }
+        .skills-category {
+            font-weight:bold;
+            color:#2c3e50;
+            margin-top:10px;
+        }
+        ul { padding-left:20px; margin:10px 0; }
+        li { margin-bottom:5px; }
+
+        /* make the date column in the experience table as wide as the education table */
+        .experience-table .experience-date { min-width:120px; }
+        .education-table .education-date { min-width:120px; }
+
+        /* ---- NEW: force the first column of both tables to the same width ---- */
+        .experience-table td:first-child,
+        .education-table td:first-child {
+            min-width:120px;
+            white-space:nowrap;
+        }
+
+        /* ---- NEW: make any element with the class “bold‑txt” bold ---- */
+        .bold-txt { font-weight: bold; }
+
+        /* ---------- Responsive tweaks ---------- */
+        @media (max-width:768px) {
+            .resume-container { padding:15px; margin:10px; }
+            header.header { flex-direction:column; align-items:center; }
+            header .info { width:100%; }
+            header .photo { width:100%; }
+            .name-cell { font-size:2rem; }
+            .section-title { font-size:1.2rem; }
+            .experience-table,
+            .education-table,
+            .skills-table,
+            .projects-table { display:block; }
+            .experience-table tr,
+            .education-table tr,
+            .skills-table tr,
+            .projects-table tr {
+                display:block;
+                margin-bottom:15px;
+                border:1px solid #eee;
+                border-radius:4px;
+                padding:10px;
+            }
+            .experience-table td,
+            .education-table td,
+            .skills-table td,
+            .projects-table td {
+                display:block;
+                width:100%;
+                padding:5px 0;
+                border-bottom:none;
+            }
+        }
+        @media (max-width:480px) {
+            body { padding:10px; }
+            .name-cell { font-size:1.8rem; }
+            .section-title { font-size:1.1rem; }
+        }
